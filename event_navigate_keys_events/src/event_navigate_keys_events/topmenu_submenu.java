@@ -23,7 +23,7 @@ public class topmenu_submenu {
 	System.out.println
 	(driv.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div[1]/div[3]/div/div/div/form/fieldset[2]/div/div/div/table/tbody/tr/td[2]"))
 			.isDisplayed());
-	driv.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+driv.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 driv.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div[1]/div[3]/div/div/div/form/fieldset[2]/div/div/div/table/tbody/tr/td[2]")).sendKeys("future");
 driv.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div[1]/div[3]/div/div/div/form/fieldset[2]/div/div/div/table/tbody/tr/td[2]")).sendKeys(Keys.ENTER);
 
@@ -32,7 +32,7 @@ driv.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div[1]/div[3]/div/div/
 	Thread.sleep(1000L);
 	driv.navigate().forward();
 	Thread.sleep(1000L);
-//	driv.quit();
+	driv.quit();
 	
 		
 		
