@@ -10,6 +10,8 @@ public class constructors {
 	System.out.println(b.mob);
 	System.out.println(b.price);
 	
+	System.out.println("nothing");
+	
 	}
 	 
 }
