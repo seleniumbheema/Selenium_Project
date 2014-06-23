@@ -3,6 +3,7 @@ package event_navigate_keys_events;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -21,6 +22,8 @@ public class keys_events {
 		
 		driv.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+		driv.findElement(By.xpath("html/body/div[1]/div/div/form/fieldset/ul/li[2]/a")).
+		sendKeys(Keys.chord(Keys.SHIFT, Keys.F10));
 		driv.findElement(By.xpath("html/body/div[1]/div/div/form/fieldset/ul/li[2]/a")).click();
 		
 		
