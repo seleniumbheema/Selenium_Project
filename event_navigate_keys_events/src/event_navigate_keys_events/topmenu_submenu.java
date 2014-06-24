@@ -23,16 +23,23 @@ public class topmenu_submenu {
 	System.out.println
 	(driv.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div[1]/div[3]/div/div/div/form/fieldset[2]/div/div/div/table/tbody/tr/td[2]"))
 			.isDisplayed());
-driv.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+/*driv.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 driv.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div[1]/div[3]/div/div/div/form/fieldset[2]/div/div/div/table/tbody/tr/td[2]")).sendKeys("future");
 driv.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div[1]/div[3]/div/div/div/form/fieldset[2]/div/div/div/table/tbody/tr/td[2]")).sendKeys(Keys.ENTER);
+*/
 
-	
+	driv.findElement(By.xpath("//*[@id='gb_70']")).click();
+	driv.findElement(By.xpath("//*[@id='account-chooser-add-account']")).click();
 	driv.navigate().back();
 	Thread.sleep(1000L);
 	driv.navigate().forward();
 	Thread.sleep(1000L);
-	driv.quit();
+	
+	driv.findElement(By.xpath("//*[@id='Email']")).sendKeys("anil.bheema");
+	driv.findElement(By.xpath("//*[@id='Passwd']")).sendKeys(Keys.chord(Keys.SHIFT,Keys.F10));
+	driv.findElement(By.xpath("//*[@id='Passwd']")).sendKeys("needtochange");
+	driv.findElement(By.xpath("//*[@id='Passwd']")).sendKeys(Keys.ENTER);
+//	driv.quit();
 	
 		
 		
