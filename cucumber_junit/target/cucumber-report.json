@@ -1,0 +1,200 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "I am a good developer",
+        "description": "",
+        "id": "life-of-it-guys;i-am-a-good-developer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 446744715,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am a \"good\" developer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "good",
+                  "offset": 8
+                }
+              ],
+              "location": "CareerTest.I_am_a_good_developer(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 347998,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I go to work",
+            "match": {
+              "location": "CareerTest.I_go_to_work()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 374560,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I \"complete\" the work",
+            "match": {
+              "arguments": [
+                {
+                  "val": "complete",
+                  "offset": 3
+                }
+              ],
+              "location": "CareerTest.I_complete_the_work(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 411131,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "My boss \"praises\" me",
+            "match": {
+              "arguments": [
+                {
+                  "val": "praises",
+                  "offset": 9
+                }
+              ],
+              "location": "CareerTest.My_boss_praises_me(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 556643,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "My manager \"hate\" me",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hate",
+                  "offset": 12
+                }
+              ],
+              "location": "CareerTest.My_manager_hate_me(String)"
+            },
+            "keyword": "But "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "I am a bad developer",
+        "description": "",
+        "id": "life-of-it-guys;i-am-a-bad-developer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 629785,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I am a \"bad\" developer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bad",
+                  "offset": 8
+                }
+              ],
+              "location": "CareerTest.I_am_a_good_developer(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 314122,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I go to work",
+            "match": {
+              "location": "CareerTest.I_go_to_work()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 441157,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I \"mess\" the work",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mess",
+                  "offset": 3
+                }
+              ],
+              "location": "CareerTest.I_complete_the_work(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 410745,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "My boss \"hates\" me",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hates",
+                  "offset": 9
+                }
+              ],
+              "location": "CareerTest.My_boss_praises_me(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 565497,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "My manager \"likes\" me",
+            "match": {
+              "arguments": [
+                {
+                  "val": "likes",
+                  "offset": 12
+                }
+              ],
+              "location": "CareerTest.My_manager_hate_me(String)"
+            },
+            "keyword": "But "
+          }
+        ]
+      }
+    ],
+    "name": "Life of IT guys",
+    "description": "In order to get good salary\r\nAs a IT guy\r\nI want to keep my boss happy",
+    "id": "life-of-it-guys",
+    "keyword": "Feature",
+    "uri": "pack1/itemployer.feature"
+  }
+]
