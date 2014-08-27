@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("practicepack/Developer.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("com/resources/Developer.feature");
 formatter.feature({
   "line": 1,
   "name": "Life of IT guys",
@@ -49,14 +49,14 @@ formatter.match({
   "location": "Developer.I_am_good_developer(String)"
 });
 formatter.result({
-  "duration": 170379125,
+  "duration": 140313239,
   "status": "passed"
 });
 formatter.match({
   "location": "Developer.I_go_to_work()"
 });
 formatter.result({
-  "duration": 194788,
+  "duration": 147824,
   "status": "passed"
 });
 formatter.match({
@@ -69,7 +69,7 @@ formatter.match({
   "location": "Developer.I_complete_the_work(String)"
 });
 formatter.result({
-  "duration": 157063,
+  "duration": 151673,
   "status": "passed"
 });
 formatter.match({
@@ -82,7 +82,7 @@ formatter.match({
   "location": "Developer.My_boss_praises_me(String)"
 });
 formatter.result({
-  "duration": 212881,
+  "duration": 143589,
   "status": "passed"
 });
 formatter.match({
@@ -95,7 +95,7 @@ formatter.match({
   "location": "Developer.My_Manager_likes_me(String)"
 });
 formatter.result({
-  "duration": 193248,
+  "duration": 153597,
   "status": "passed"
 });
 formatter.scenario({
@@ -141,14 +141,14 @@ formatter.match({
   "location": "Developer.I_am_good_developer(String)"
 });
 formatter.result({
-  "duration": 336453,
+  "duration": 309890,
   "status": "passed"
 });
 formatter.match({
   "location": "Developer.I_go_to_work()"
 });
 formatter.result({
-  "duration": 167842,
+  "duration": 137045,
   "status": "passed"
 });
 formatter.match({
@@ -161,7 +161,7 @@ formatter.match({
   "location": "Developer.I_complete_the_work(String)"
 });
 formatter.result({
-  "duration": 196328,
+  "duration": 160912,
   "status": "passed"
 });
 formatter.match({
@@ -174,7 +174,7 @@ formatter.match({
   "location": "Developer.My_boss_praises_me(String)"
 });
 formatter.result({
-  "duration": 210186,
+  "duration": 165531,
   "status": "passed"
 });
 formatter.match({
@@ -187,10 +187,10 @@ formatter.match({
   "location": "Developer.My_Manager_likes_me(String)"
 });
 formatter.result({
-  "duration": 160912,
+  "duration": 123956,
   "status": "passed"
 });
-formatter.uri("practicepack/tester.feature");
+formatter.uri("com/resources/tester.feature");
 formatter.feature({
   "line": 1,
   "name": "Life of techical",
@@ -199,83 +199,369 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 7,
+  "line": 18,
   "name": "i works to Microsoft",
   "description": "",
-  "id": "life-of-techical;i-works-to-microsoft",
+  "id": "life-of-techical;i-works-to-microsoft;;2",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 8,
-  "name": "I work in \"Microsoft\"",
+  "name": "I work in \"Micro\"",
+  "matchedColumns": [
+    0
+  ],
+  "rows": [
+    {
+      "cells": [
+        "tech",
+        "country"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "Java",
+        "India"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "Sel",
+        "Pak"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "SAP",
+        "Germany"
+      ],
+      "line": 12
+    }
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
-  "name": "I met \"nadellasatya\"",
+  "line": 13,
+  "name": "I met \"Nadella\"",
+  "matchedColumns": [
+    1
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
-  "name": "He \"notwilling\"",
+  "line": 14,
+  "name": "He \"white\"",
+  "matchedColumns": [
+    2
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
-  "name": "he is a \"cool\" person",
+  "line": 15,
+  "name": "he is a \"naughty\" person",
+  "matchedColumns": [
+    3
+  ],
   "keyword": "But "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Microsoft",
+      "val": "Micro",
       "offset": 11
     }
   ],
-  "location": "Teste.I_works(String)"
+  "location": "Teste.I_works(String,DataTable)"
 });
 formatter.result({
-  "duration": 697157,
+  "duration": 1491707,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "nadellasatya",
+      "val": "Nadella",
       "offset": 7
     }
   ],
   "location": "Teste.I_met(String)"
 });
 formatter.result({
-  "duration": 347231,
+  "duration": 132810,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "notwilling",
+      "val": "white",
       "offset": 4
     }
   ],
   "location": "Teste.He(String)"
 });
 formatter.result({
-  "duration": 276784,
+  "duration": 142049,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "cool",
+      "val": "naughty",
       "offset": 9
     }
   ],
   "location": "Teste.he_is(String)"
 });
 formatter.result({
-  "duration": 293337,
+  "duration": 135889,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "i works to Microsoft",
+  "description": "",
+  "id": "life-of-techical;i-works-to-microsoft;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 8,
+  "name": "I work in \"Apple\"",
+  "matchedColumns": [
+    0
+  ],
+  "rows": [
+    {
+      "cells": [
+        "tech",
+        "country"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "Java",
+        "India"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "Sel",
+        "Pak"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "SAP",
+        "Germany"
+      ],
+      "line": 12
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 13,
+  "name": "I met \"tim\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "He \"european\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "he is a \"silent\" person",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "But "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Apple",
+      "offset": 11
+    }
+  ],
+  "location": "Teste.I_works(String,DataTable)"
+});
+formatter.result({
+  "duration": 383416,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tim",
+      "offset": 7
+    }
+  ],
+  "location": "Teste.I_met(String)"
+});
+formatter.result({
+  "duration": 134735,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "european",
+      "offset": 4
+    }
+  ],
+  "location": "Teste.He(String)"
+});
+formatter.result({
+  "duration": 95470,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "silent",
+      "offset": 9
+    }
+  ],
+  "location": "Teste.he_is(String)"
+});
+formatter.result({
+  "duration": 148593,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "i works to Microsoft",
+  "description": "",
+  "id": "life-of-techical;i-works-to-microsoft;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 8,
+  "name": "I work in \"samsu\"",
+  "matchedColumns": [
+    0
+  ],
+  "rows": [
+    {
+      "cells": [
+        "tech",
+        "country"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "Java",
+        "India"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "Sel",
+        "Pak"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "SAP",
+        "Germany"
+      ],
+      "line": 12
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 13,
+  "name": "I met \"larry\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "He \"Indian\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "he is a \"copy\" person",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "But "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "samsu",
+      "offset": 11
+    }
+  ],
+  "location": "Teste.I_works(String,DataTable)"
+});
+formatter.result({
+  "duration": 472342,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "larry",
+      "offset": 7
+    }
+  ],
+  "location": "Teste.I_met(String)"
+});
+formatter.result({
+  "duration": 160527,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Indian",
+      "offset": 4
+    }
+  ],
+  "location": "Teste.He(String)"
+});
+formatter.result({
+  "duration": 138969,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "copy",
+      "offset": 9
+    }
+  ],
+  "location": "Teste.he_is(String)"
+});
+formatter.result({
+  "duration": 170151,
   "status": "passed"
 });
 });
