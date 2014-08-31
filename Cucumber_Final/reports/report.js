@@ -7,36 +7,77 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 7,
+  "line": 18,
   "name": "I am a good developer",
   "description": "",
-  "id": "life-of-it-guys;i-am-a-good-developer",
+  "id": "life-of-it-guys;i-am-a-good-developer;;2",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@developer"
+    }
+  ]
 });
 formatter.step({
   "line": 8,
   "name": "I am a \"good\" developer",
+  "matchedColumns": [
+    0
+  ],
+  "rows": [
+    {
+      "cells": [
+        "tech",
+        "country"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "Java",
+        "US"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "XSLT",
+        "UK"
+      ],
+      "line": 11
+    }
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 12,
   "name": "I go to work",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 13,
   "name": "I \"complete\" the work",
+  "matchedColumns": [
+    1
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 14,
   "name": "My boss \"praises\" me",
+  "matchedColumns": [
+    2
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
-  "name": "My manager \"hate\" me",
+  "line": 15,
+  "name": "My manager \"hates\" me",
+  "matchedColumns": [
+    3
+  ],
   "keyword": "But "
 });
 formatter.match({
@@ -46,17 +87,17 @@ formatter.match({
       "offset": 8
     }
   ],
-  "location": "Developer.I_am_good_developer(String)"
+  "location": "Developer.I_am_good_developer(String,DataTable)"
 });
 formatter.result({
-  "duration": 140313239,
+  "duration": 145021606,
   "status": "passed"
 });
 formatter.match({
   "location": "Developer.I_go_to_work()"
 });
 formatter.result({
-  "duration": 147824,
+  "duration": 126652,
   "status": "passed"
 });
 formatter.match({
@@ -69,7 +110,7 @@ formatter.match({
   "location": "Developer.I_complete_the_work(String)"
 });
 formatter.result({
-  "duration": 151673,
+  "duration": 132042,
   "status": "passed"
 });
 formatter.match({
@@ -82,99 +123,140 @@ formatter.match({
   "location": "Developer.My_boss_praises_me(String)"
 });
 formatter.result({
-  "duration": 143589,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "hate",
-      "offset": 12
-    }
-  ],
-  "location": "Developer.My_Manager_likes_me(String)"
-});
-formatter.result({
-  "duration": 153597,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "I am a bad developer",
-  "description": "",
-  "id": "life-of-it-guys;i-am-a-bad-developer",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 17,
-  "name": "I am a \"bad\" developer",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 18,
-  "name": "I go to work",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 19,
-  "name": "I \"mess\" the work",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "My boss \"hates\" me",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "My manager \"likes\" me",
-  "keyword": "But "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "bad",
-      "offset": 8
-    }
-  ],
-  "location": "Developer.I_am_good_developer(String)"
-});
-formatter.result({
-  "duration": 309890,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Developer.I_go_to_work()"
-});
-formatter.result({
-  "duration": 137045,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "mess",
-      "offset": 3
-    }
-  ],
-  "location": "Developer.I_complete_the_work(String)"
-});
-formatter.result({
-  "duration": 160912,
+  "duration": 85846,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "hates",
+      "offset": 12
+    }
+  ],
+  "location": "Developer.My_Manager_likes_me(String)"
+});
+formatter.result({
+  "duration": 123957,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "I am a good developer",
+  "description": "",
+  "id": "life-of-it-guys;i-am-a-good-developer;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@developer"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "I am a \"midd\" developer",
+  "matchedColumns": [
+    0
+  ],
+  "rows": [
+    {
+      "cells": [
+        "tech",
+        "country"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "Java",
+        "US"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "XSLT",
+        "UK"
+      ],
+      "line": 11
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "I go to work",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "I \"left\" the work",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "My boss \"opposes\" me",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "My manager \"likes\" me",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "But "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "midd",
+      "offset": 8
+    }
+  ],
+  "location": "Developer.I_am_good_developer(String,DataTable)"
+});
+formatter.result({
+  "duration": 490439,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Developer.I_go_to_work()"
+});
+formatter.result({
+  "duration": 64289,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "left",
+      "offset": 3
+    }
+  ],
+  "location": "Developer.I_complete_the_work(String)"
+});
+formatter.result({
+  "duration": 261387,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "opposes",
       "offset": 9
     }
   ],
   "location": "Developer.My_boss_praises_me(String)"
 });
 formatter.result({
-  "duration": 165531,
+  "duration": 134351,
   "status": "passed"
 });
 formatter.match({
@@ -187,7 +269,140 @@ formatter.match({
   "location": "Developer.My_Manager_likes_me(String)"
 });
 formatter.result({
-  "duration": 123956,
+  "duration": 123957,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "I am a good developer",
+  "description": "",
+  "id": "life-of-it-guys;i-am-a-good-developer;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@developer"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "I am a \"bad\" developer",
+  "matchedColumns": [
+    0
+  ],
+  "rows": [
+    {
+      "cells": [
+        "tech",
+        "country"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "Java",
+        "US"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "XSLT",
+        "UK"
+      ],
+      "line": 11
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "I go to work",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "I \"incomp\" the work",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "My boss \"irritate\" me",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "My manager \"kills\" me",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "But "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "bad",
+      "offset": 8
+    }
+  ],
+  "location": "Developer.I_am_good_developer(String,DataTable)"
+});
+formatter.result({
+  "duration": 378416,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Developer.I_go_to_work()"
+});
+formatter.result({
+  "duration": 94315,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "incomp",
+      "offset": 3
+    }
+  ],
+  "location": "Developer.I_complete_the_work(String)"
+});
+formatter.result({
+  "duration": 185936,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "irritate",
+      "offset": 9
+    }
+  ],
+  "location": "Developer.My_boss_praises_me(String)"
+});
+formatter.result({
+  "duration": 88156,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "kills",
+      "offset": 12
+    }
+  ],
+  "location": "Developer.My_Manager_likes_me(String)"
+});
+formatter.result({
+  "duration": 85461,
   "status": "passed"
 });
 formatter.uri("com/resources/tester.feature");
@@ -278,7 +493,7 @@ formatter.match({
   "location": "Teste.I_works(String,DataTable)"
 });
 formatter.result({
-  "duration": 1491707,
+  "duration": 642113,
   "status": "passed"
 });
 formatter.match({
@@ -291,7 +506,7 @@ formatter.match({
   "location": "Teste.I_met(String)"
 });
 formatter.result({
-  "duration": 132810,
+  "duration": 106249,
   "status": "passed"
 });
 formatter.match({
@@ -304,7 +519,7 @@ formatter.match({
   "location": "Teste.He(String)"
 });
 formatter.result({
-  "duration": 142049,
+  "duration": 84306,
   "status": "passed"
 });
 formatter.match({
@@ -317,7 +532,7 @@ formatter.match({
   "location": "Teste.he_is(String)"
 });
 formatter.result({
-  "duration": 135889,
+  "duration": 78917,
   "status": "passed"
 });
 formatter.scenario({
@@ -400,7 +615,7 @@ formatter.match({
   "location": "Teste.I_works(String,DataTable)"
 });
 formatter.result({
-  "duration": 383416,
+  "duration": 337609,
   "status": "passed"
 });
 formatter.match({
@@ -413,7 +628,7 @@ formatter.match({
   "location": "Teste.I_met(String)"
 });
 formatter.result({
-  "duration": 134735,
+  "duration": 112023,
   "status": "passed"
 });
 formatter.match({
@@ -426,7 +641,7 @@ formatter.match({
   "location": "Teste.He(String)"
 });
 formatter.result({
-  "duration": 95470,
+  "duration": 92390,
   "status": "passed"
 });
 formatter.match({
@@ -439,7 +654,7 @@ formatter.match({
   "location": "Teste.he_is(String)"
 });
 formatter.result({
-  "duration": 148593,
+  "duration": 199409,
   "status": "passed"
 });
 formatter.scenario({
@@ -522,7 +737,7 @@ formatter.match({
   "location": "Teste.I_works(String,DataTable)"
 });
 formatter.result({
-  "duration": 472342,
+  "duration": 495058,
   "status": "passed"
 });
 formatter.match({
@@ -535,7 +750,7 @@ formatter.match({
   "location": "Teste.I_met(String)"
 });
 formatter.result({
-  "duration": 160527,
+  "duration": 122802,
   "status": "passed"
 });
 formatter.match({
@@ -548,7 +763,7 @@ formatter.match({
   "location": "Teste.He(String)"
 });
 formatter.result({
-  "duration": 138969,
+  "duration": 103554,
   "status": "passed"
 });
 formatter.match({
@@ -561,7 +776,7 @@ formatter.match({
   "location": "Teste.he_is(String)"
 });
 formatter.result({
-  "duration": 170151,
+  "duration": 98549,
   "status": "passed"
 });
 });
