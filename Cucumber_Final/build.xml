@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE project []>
+<project name="MyProject"  basedir=".">
+    <description>
+        simple example build file
+    </description>
+  <!-- set global properties for this build -->
+  <property name="cucumber" value="${basedir}"/>
+  <property name="ws.jars" value="C:\Users\bheemaa\.m2\repository"/>
+  <property name="test.dest" value="${cucumber}/build"/>
+  <property name="test.src" value="${cucumber}/src"/>
+	
+	<path id="testcase.path">
+		
+	<pathelement location="${test.dest}"/>
+		
+		<fileset dir="${ws.jars}">
+			<include name="**/*.jar"/>
+		</fileset> 
+	
+	</path>
+	
+	<!-- clean-->
+	<target name="clean">
+		<delete dir="${test.dest}"/>
+	</target>
+	
+	<!-- compile -->
+	<target name="compile" depends="clean">
+		<!-- creates the destination directory-->
+		<mkdir dir="${test.dest}"/>
+		<javac srcdir="${test.src}" destdir="${test.dest}" classpathref="testcase.path" includeantruntime="false"/>
+		<copy file="src/log4j.properties" todir="build/"/>
+	</target>
+	
+	  <target name="runcukes" depends="compile">
+	        <mkdir dir="target/cucumber-junit-report"/>
+	        <java classname="cucumber.api.cli.Main" fork="true" failonerror="false" resultproperty="cucumber.exitstatus">
+	            <classpath refid="testcase.path"/>
+	        	<!-- Format argument used to generate HTML and Junit report-->
+	            <arg value="--format"/>
+	            <arg value="junit:target/cucumber-junit-report/"/>
+	            <arg value="--format"/>
+	            <arg value="pretty"/>
+	            <arg value="--format"/>
+	            <arg value="html:target/cucumber-html-report"/>
+	        	<arg value="--tags"/>
+	        	<arg value="@developer"/>
+	            <arg value="--glue"/>
+	            <arg value="com/resources"/>
+	            <arg value="praticepack"/>
+	        </java>
+				
+	     <junitreport todir="target/cucumber-junit-report">
+	            <fileset dir="target/cucumber-junit-report">
+	                <include name="allcukes.xml"/>
+	            </fileset>
+	            <report format="frames" todir="target/cucumber-junit-report"/>
+	        </junitreport>
+
+	        <fail message="Cucumber failed">
+	            <condition>
+	                <not>
+	                    <equals arg1="${cucumber.exitstatus}" arg2="0"/>
+	                </not>
+	            </condition>
+	        </fail>
+	    </target>
+	
+	<!--<target name="dist" depends="compile"
+	        description="generate the distribution" >
+	    <!-/- Create the distribution directory -/->
+	    <mkdir dir="${dist}/lib"/>
+
+	    <!-/- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -/->
+	    <jar jarfile="${dist}/lib/MyProject-${DSTAMP}.jar" basedir="${build}"/>
+	  </target>-->
+</project>
